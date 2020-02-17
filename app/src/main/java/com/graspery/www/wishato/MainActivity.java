@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         mWebView = findViewById(R.id.webview);
         mWebView.getSettings().setLoadsImagesAutomatically(true);
         mWebView.getSettings().setJavaScriptEnabled(true);
+        mWebView.setWebViewClient(new WebViewClient());
         mWebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         mWebView.loadUrl(url);
     }
